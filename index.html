@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Jurusan Teknik Geomatika SMKN 2 Yogyakarta</h1>
+</header>
+<nav id="menu">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+    <ul>
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="Profil Jurusan.html">Profil Jurusan</a></li>
+        <li><a href="Prestasi.html">Prestasi</a></li>
+        <li><a href="Album.html">Album</a></li>
+        <li><a href="Buku Tamu.html">Buku Tamu</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2>Teknik Geomatika</h2>
+    <section class="new-slideshow-container">
+      <div class="new-slide fade">
+        <div class="image-container">
+        <img src="images/Geomatika10(5).jpg" style="width:100%">
+      </div>
+      </div>
+      <div class="new-slide fade">
+        <div class="image-container">
+        <img src="images/Geomatika3.jpg" style="width:100%">
+        <div class="text">Ruang teori jurusan Teknik Geomatika</div>
+      </div>
+      </div>
+      <div class="new-slide fade">
+        <div class="image-container">
+        <img src="images/geomatika2.jpg" style="width:100%">
+        <div class="text">Peralatan praktik</div>
+      </div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </section>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+        <div class="LinkAlbum">
+            <a href="Album.html" class="album-button">Lihat foto lainnya</a>
+        </div>
+    <section class="geomatika">
+      <h3>Apa itu Jurusan Teknik Geomatika?</h3>
+    <p>​Jurusan Teknik Geomatika di SMK Negeri 2 Yogyakarta 
+        merupakan program keahlian yang mempersiapkan siswa dalam bidang pengumpulan, 
+        pemodelan, analisis, dan manajemen data spasial berbasis lokasi. 
+        Teknik Geomatika atau Teknik Survey Pemetaan adalah ilmu perpaduan antara ilmu Geodesi dan ilmu Informatika.
+Oleh sebab itu, kompetensi keahlian ini mempelajari bagaimana mengintegrasikan pengumpulan, pemodelan, analisis, hingga manajemen data spasial (berbasis lokasi) yang berdasarkan pada ilmu Geodesi.
+        Teknik Geomatika di SMK adalah jurusan yang mempelajari tentang pengukuran, pengolahan, dan pemetaan permukaan bumi. 
+        Para siswa di jurusan ini diajarkan bagaimana cara mengumpulkan data spasial (data yang berkaitan dengan posisi di permukaan bumi) menggunakan berbagai teknologi, seperti alat ukur tanah (total station, GPS), citra satelit, dan perangkat lunak pemetaan.
+        Dalam pembelajarannya, siswa Teknik Geomatika akan memahami berbagai metode survei, seperti survei topografi, survei hidrografi, dan survei geospasial. 
+        Mereka juga belajar mengolah data menjadi peta, model 3D, serta melakukan analisis spasial menggunakan software seperti AutoCAD, ArcGIS, atau perangkat lunak pemetaan lainnya.
+        Setelah lulus, siswa diharapkan mampu bekerja di bidang survei dan pemetaan, konstruksi, pertanahan, pertambangan, maupun di instansi pemerintahan dan perusahaan swasta yang bergerak dalam bidang geospasial.
+        Materi yang biasanya dipelajari di jurusan Teknik Geomatika meliputi:
+        <ul>
+          <li>Dasar-dasar pengukuran tanah</li>
+          <li>Survei dan pemetaan digital</li>
+          <li>Penginderaan jauh (remote sensing)</li>
+          <li>Sistem Informasi Geografis (SIG/GIS)</li>
+          <li>Pengelolaan data spasial</li>
+        </ul>
+    </p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+<footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SMK2YK?mibextid=ZbWKwL" target="_blank"><img src="images/Facebook_Logo_Primary.png" alt="Facebook" height="24"></a>
+      <a href="https://x.com/smkn2yogyakarta?t=XyQdE3DHUm4X1HFQwNL-_A&s=09" target="_blank"><img src="images/logo-white.png" alt="Twitter" height="24"></a>
+      <a href="https://www.instagram.com/smkn2yogyakarta?igsh=MXdlZnl0cWxza215dw==" target="_blank"><img src="images/Instagram_Glyph_White.png" alt="Instagram" height="24"></a>
+      <a href="https://youtube.com/@smkn2yogyakarta?si=ql03MpO1IwHHB1xt" target="_blank"><img src="images/yt_icon_rgb.png" alt="YouTube" height="20"></a>
+      <a href="https://www.tiktok.com/@smk2yogyakarta?_t=ZS-8vjhWj5bLB2&_r=1" target="_blank"><img src="images/TikTok_Icon_Black_Circle.png" alt="TikTok" height="24"></a>
+    </div>
+    <p>Copyright © 2025 Galenio SMKN 2 Yogyakarta</p>
+  </footer>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("new-slide");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    
+    // Auto-slide
+    setInterval(() => { plusSlides(1) }, 4000);
+    </script>
+</body>
+</html>

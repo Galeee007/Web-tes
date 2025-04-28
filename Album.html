@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Album Jurusan Teknik Geomatika</h1>
+</header>
+<nav id="menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Profil Jurusan.html">Profil Jurusan</a></li>
+        <li><a href="Prestasi.html">Prestasi</a></li>
+        <li><a href="Album.html" class="active">Album</a></li>
+        <li><a href="Buku Tamu.html">Buku Tamu</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Album Jurusan Teknik Geomatika</h1>
+<div class="album">
+    <figure>
+        <img src="images/geomatika2.jpg" alt="geomatika2" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika9.jpg" alt="geomatika3" onclick="openLightbox(this)">
+        <figcaption>Lorong di depan ruang teori Jurusan Teknik Geomatika</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika4.jpg" alt="geomatika4" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika5.jpg" alt="geomatika5" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika6.jpg" alt="geomatika6" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika7.jpg" alt="geomatika7" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika8.jpg" alt="geomatika8" onclick="openLightbox(this)">
+        <figcaption>Peralatan praktik</figcaption>
+    </figure>
+    <figure>
+        <img src="images/prestasi4.jpg" alt="" onclick="openLightbox(this)">
+        <figcaption>Piala</figcaption>
+    </figure>
+    <figure>
+        <img src="images/Geomatika10.jpg" alt="geomatika10" onclick="openLightbox(this)">
+        <figcaption>Ruang teori</figcaption>
+    </figure>
+    <figure>
+        <img src="images/prestasi1.jpg" alt="prestasi1" onclick="openLightbox(this)">
+        <figcaption>Piala</figcaption>
+    </figure>
+    <figure>
+        <img src="images/prestasi2.jpg" alt="prestasi2" onclick="openLightbox(this)">
+        <figcaption>Piala</figcaption>
+    </figure>
+    <figure>
+        <img src="images/prestasi3.jpg" alt="prestasi3" onclick="openLightbox(this)">
+        <figcaption>Piala</figcaption>
+    </figure>
+    <figure>
+        <img src="images/tambahan.jpg" alt="tambahan" onclick="openLightbox(this)">
+        <figcaption>Kenang-kenangan</figcaption>
+    </figure>
+</div>
+</body>
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+<script src="script.js"></script>
+<script>
+    function openLightbox(img) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+    }
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
+<footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SMK2YK?mibextid=ZbWKwL" target="_blank"><img src="images/Facebook_Logo_Primary.png" alt="Facebook" height="24"></a>
+      <a href="https://x.com/smkn2yogyakarta?t=XyQdE3DHUm4X1HFQwNL-_A&s=09" target="_blank"><img src="images/logo-white.png" alt="Twitter" height="24"></a>
+      <a href="https://www.instagram.com/smkn2yogyakarta?igsh=MXdlZnl0cWxza215dw==" target="_blank"><img src="images/Instagram_Glyph_White.png" alt="Instagram" height="24"></a>
+      <a href="https://youtube.com/@smkn2yogyakarta?si=ql03MpO1IwHHB1xt" target="_blank"><img src="images/yt_icon_rgb.png" alt="YouTube" height="20"></a>
+      <a href="https://www.tiktok.com/@smk2yogyakarta?_t=ZS-8vjhWj5bLB2&_r=1" target="_blank"><img src="images/TikTok_Icon_Black_Circle.png" alt="TikTok" height="24"></a>
+    </div>
+    <p>Copyright © 2025 Galenio SMKN 2 Yogyakarta</p>
+  </footer>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Prestasi Jurusan Teknik Geomatika</h1>
+</header>
+<nav id="menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Profil Jurusan.html">Profil Jurusan</a></li>
+        <li><a href="Prestasi.html" class="active">Prestasi</a></li>
+        <li><a href="Album.html">Album</a></li>
+        <li><a href="Buku Tamu.html">Buku Tamu</a></li>
+    </ul>
+</nav>
+<main id="prestasi">
+    <h1>Prestasi Jurusan Teknik Geomatika</h1>
+    <section class="albumPrestasi">
+        <div class="prestasi1" onclick="openPopup('images/prestasi1.jpg', 'Juara 2 Skaduta Festival 2023 Tim Voli Putri')">
+            <img src="images/prestasi1.jpg" alt="prestasi1">
+            <p>Juara 1 Lomba Pemetaan Nasional 2024</p>
+        </div>
+        <div class="prestasi1" onclick="openPopup('images/prestasi2.jpg', 'Juara 2 Skaduta Festival 2023')">
+            <img src="images/prestasi2.jpg" alt="Prestasi2">
+            <p>Finalis Kompetisi Geospasial Tingkat Provinsi</p>
+        </div>
+        <div class="prestasi1" onclick="openPopup('images/prestasi3.jpg', 'Juara 2 Skaduta Festival 2023')">
+            <img src="images/prestasi3.jpg" alt="Prestasi3">
+            <p>Best Innovation in Mapping Technology Award</p>
+        </div>
+        <div class="prestasi1" onclick="openPopup('images/prestasi4.jpg', 'Juara 2 Skaduta Festival 2023')">
+            <img src="images/prestasi4.jpg" alt="Prestasi4">
+            <p>Best Innovation in Mapping Technology Award</p>
+        </div>
+        <div class="prestasi1" onclick="openPopup('images/tambahan.jpg', 'Juara 2 Skaduta Festival 2023')">
+            <img src="images/tambahan.jpg" alt="Tambahan">
+            <p>Best Innovation in Mapping Technology Award</p>
+        </div>
+    </section>
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img class="popup-content" id="popup-img">
+        <div id="caption"></div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SMK2YK?mibextid=ZbWKwL" target="_blank"><img src="images/Facebook_Logo_Primary.png" alt="Facebook" height="24"></a>
+      <a href="https://x.com/smkn2yogyakarta?t=XyQdE3DHUm4X1HFQwNL-_A&s=09" target="_blank"><img src="images/logo-white.png" alt="Twitter" height="24"></a>
+      <a href="https://www.instagram.com/smkn2yogyakarta?igsh=MXdlZnl0cWxza215dw==" target="_blank"><img src="images/Instagram_Glyph_White.png" alt="Instagram" height="24"></a>
+      <a href="https://youtube.com/@smkn2yogyakarta?si=ql03MpO1IwHHB1xt" target="_blank"><img src="images/yt_icon_rgb.png" alt="YouTube" height="20"></a>
+      <a href="https://www.tiktok.com/@smk2yogyakarta?_t=ZS-8vjhWj5bLB2&_r=1" target="_blank"><img src="images/TikTok_Icon_Black_Circle.png" alt="TikTok" height="24"></a>
+    </div>
+    <p>Copyright © 2025 Galenio SMKN 2 Yogyakarta</p>
+  </footer>
+  <script src="script.js"></script>
+<script>    
+  function openPopup(imagesSrc, captionText) {
+    var popup = document.getElementById("popup");
+    var popupImg = document.getElementById("popup-img");
+    var caption = document.getElementById("caption");
+
+    popup.style.display = "block";
+    popupImg.src = imagesSrc;
+    caption.innerHTML = captionText;
+}
+
+function closePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none"
+}
+</script>
+</body>
+</html>

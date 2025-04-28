@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>Buku Tamu </h1>
+</header>
+<nav id="menu">
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Profil Jurusan.html">Profil Jurusan</a></li>
+        <li><a href="Prestasi.html">Prestasi</a></li>
+        <li><a href="Album.html">Album</a></li>
+        <li><a href="Buku Tamu.html" class="active">Buku Tamu</a></li>
+    </ul>
+</nav>
+<div class="bukutamu">
+    <h1>Buku Tamu</h1>
+    <form id="guestform">    
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required autofocus><p>
+        <label for="email">Email:</label> 
+        <input type="email" id="email" name="email" required><p>
+        <label for="NoHP">Nomor Telepon:</label>    
+        <input type="tel" id="noHP" name="NoHP" placeholder="0812-3456-7890" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4-5}"><p>
+        <label>Rate web ini:</label>
+        <div id="slideContainer">
+        <input type="range" min="0" max="100" value="50" id="myRange" class="slider">
+        <p>Nilai: <span id="value"></span></p>
+        </div>
+        <label>Komentar/masukan:</label>
+        <textarea id="pesan" name="pesan" rows="5" cols="20"></textarea><p>
+    <button type="reset">Reset</button>
+    <button type="submit">Kirim</button>
+    </form>
+</div>
+<script src="script.js"></script>
+<footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/SMK2YK?mibextid=ZbWKwL" target="_blank"><img src="images/Facebook_Logo_Primary.png" alt="Facebook" height="24"></a>
+      <a href="https://x.com/smkn2yogyakarta?t=XyQdE3DHUm4X1HFQwNL-_A&s=09" target="_blank"><img src="images/logo-white.png" alt="Twitter" height="24"></a>
+      <a href="https://www.instagram.com/smkn2yogyakarta?igsh=MXdlZnl0cWxza215dw==" target="_blank"><img src="images/Instagram_Glyph_White.png" alt="Instagram" height="24"></a>
+      <a href="https://youtube.com/@smkn2yogyakarta?si=ql03MpO1IwHHB1xt" target="_blank"><img src="images/yt_icon_rgb.png" alt="YouTube" height="20"></a>
+      <a href="https://www.tiktok.com/@smk2yogyakarta?_t=ZS-8vjhWj5bLB2&_r=1" target="_blank"><img src="images/TikTok_Icon_Black_Circle.png" alt="TikTok" height="24"></a>
+    </div>
+    <p>Copyright © 2025 Galenio SMKN 2 Yogyakarta</p>
+  </footer>
+</body>
+</html>
